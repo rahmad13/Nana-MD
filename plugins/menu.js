@@ -136,15 +136,15 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            hydratedContentText: text.trim(),
            hydratedButtons: [{
              urlButton: {
-               displayText: 'Source Code',
-               url: 'https://github.com/adulalhy/Nana-MD'
+               displayText: 'Instagram',
+               url: 'https://instagram.com/yrtxx_?utm_medium=copy_link'
              }
 
            },
                {
              callButton: {
                displayText: 'Call Owner',
-               phoneNumber: '+62'
+               phoneNumber: '+6283108164709'
              }
            },
                {
