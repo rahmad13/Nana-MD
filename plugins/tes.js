@@ -3,7 +3,7 @@ let handler = m => m
 handler.before = async function (m, { conn, isAdmin, isBotAdmin }) {
 if (m.key.fromMe) return 
 if (m.isBaileys) return 
-  if (m.mentionedJid.includes(conn.user.jid)) {
+  if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
 conn.sendFile(m.chat, './src/tag.webp', 'apsi tag tag', '', m)
 conn.sendFile(m.chat, './src/nana.mp3', 'nana.mp3', '',m)
    } else if (m.text.toLowerCase() == 'p') {
